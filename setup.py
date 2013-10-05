@@ -1,3 +1,8 @@
+import sys
+
+if sys.version_info.major == '3':
+    raise RuntimeError('Python 2.x is required')
+
 try:
     from setuptools import setup
 except ImportError:
